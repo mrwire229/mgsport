@@ -33,7 +33,7 @@ justify-content: center;
 
 .formbox {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-top: 5%;
     justify-content: center;
 }
