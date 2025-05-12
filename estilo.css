@@ -9,3 +9,78 @@ body{
 h2{
     text-align: center;
 }
+
+.boxlogin {
+font-weight: bold;
+background-color: lime
+color(white);
+width: 50%;
+height: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 50%);
+position: absolute;
+}
+
+
+
+.formbox {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+form input[type=text] {
+    outline: unset;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+form input[type=password] {
+    outline: unset;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+form input[type=submit]:hover {
+    outline: unset;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+form input[type=reset] {
+    outline: unset;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+form input[type=reset]:hover {
+    outline: unset;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
