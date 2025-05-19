@@ -122,3 +122,27 @@ footer {
     text-align: center;
     box-sizing: border-box;
 }
+
+.cardbox {
+    margin-top: 20%;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+.card {
+    background-color: lime;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    
+}
