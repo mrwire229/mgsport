@@ -13,8 +13,8 @@ if (!$conexao) {
 $sql = "SELECT * FROM usuarios";
 $resultado = mysqli_query($conexao, $sql);
 
-if (mysqli_num_rows(!$resultado)>0) {
-    echo "<table border = '1'>"
+if (mysqli_num_rows($resultado)>0) {
+    echo "<table border = '1'>";
     echo "<tr><th>Nome</th> <th>Senha</th> <th>Cargo</th> <th>CPF</th>";
 while($linha = mysqli_fetch_assoc($resultado)) {
     echo "<tr>";
