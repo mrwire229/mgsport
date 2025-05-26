@@ -13,9 +13,20 @@ if (!$conexao) {
 $sql = "SELECT * FROM usuarios";
 $resultado = mysqli_query($conexao, $sql);
 
-if (mysqli_num_rows(!resultado)>0) {
+if (mysqli_num_rows(!$resultado)>0) {
     echo "<table border = '1'>"
     echo "<tr><th>Nome</th> <th>Senha</th> <th>Cargo</th> <th>CPF</th>";
-    echo "<tr>"
-    echo "<td>" 
+while($linha = mysqli_fetch_assoc($resultado)) {
+    echo "<tr>";
+    echo "<td>" .$linha['nomeusr']. "</td>";
+    echo "<td>" .$linha['senhausr']. "</td>";
+    echo "<td>" .$linha['cargo']. "</td>";
+    echo "<td>" .$linha['cpf']. "</td>";
 }
+echo "</table>";
+}
+else {
+    echo "nenhum resultado encontrado.";
+}
+mysqli_close($conexao);
+?>
